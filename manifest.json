@@ -1,19 +1,30 @@
 {
   "manifest_version": 3,
-  "name": "Simple Timer",
-  "version": "1.0",
-  "description": "A simple countdown timer extension",
+  "name": "Modern Timer",
+  "version": "2.0",
+  "description": "A modern sidebar timer that works continuously",
   "permissions": [
     "notifications",
-    "storage"
+    "storage",
+    "sidePanel",
+    "activeTab"
   ],
   "action": {
-    "default_popup": "popup.html",
-    "default_title": "Simple Timer"
+    "default_title": "Modern Timer"
   },
   "background": {
     "service_worker": "background.js"
   },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",

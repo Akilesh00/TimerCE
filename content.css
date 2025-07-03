@@ -1,0 +1,52 @@
+.floating-timer {
+    position: fixed !important;
+    right: 20px !important;
+    bottom: 20px !important;
+    background: rgba(102, 126, 234, 0.95) !important;
+    color: white !important;
+    padding: 12px 16px !important;
+    border-radius: 25px !important;
+    font-family: 'Courier New', monospace !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    z-index: 2147483647 !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer !important;
+    user-select: none !important;
+}
+
+.floating-timer:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+}
+
+.floating-tab {
+    position: fixed !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: rgba(102, 126, 234, 0.95) !important;
+    color: white !important;
+    padding: 15px 8px !important;
+    border-radius: 12px 0 0 12px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-right: none !important;
+    z-index: 2147483647 !important;
+    writing-mode: vertical-lr !important;
+    text-orientation: mixed !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1) !important;
+    user-select: none !important;
+}
+
+.floating-tab:hover {
+    background: rgba(102, 126, 234, 1) !important;
+    transform: translateY(-50%) translateX(-5px) !important;
+}
