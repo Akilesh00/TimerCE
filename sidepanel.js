@@ -221,6 +221,10 @@ class ModernTimer {
     }
 }
 
+// document.getElementById('toggleSidebar').addEventListener('click', () => {
+//     document.getElementById('floatingSidebar').classList.toggle('open');
+// });
+
 // Initialize timer when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const timer = new ModernTimer();
